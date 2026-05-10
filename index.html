@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="水利水电工程与新能源方向博士生学术个人网站首页。"
+    />
+    <title>乔梁 | 水利水电工程</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#profile">跳转到内容</a>
+
+    <svg class="svg-defs" aria-hidden="true">
+      <symbol id="icon-dam" viewBox="0 0 48 48">
+        <path d="M8 39h32" />
+        <path d="M13 39l4-25h14l4 25" />
+        <path d="M16 21h16" />
+        <path d="M15 29h18" />
+        <path d="M7 17c3-2 6-2 9 0s6 2 9 0 6-2 9 0 5 2 7 0" />
+      </symbol>
+      <symbol id="icon-wind" viewBox="0 0 48 48">
+        <path d="M24 22v19" />
+        <circle cx="24" cy="19" r="3" />
+        <path d="M24 16V6c5 1 8 4 9 8l-6 4" />
+        <path d="M21 21l-9 6c-2-5-1-9 2-12l7 2" />
+        <path d="M27 21l9 5c-3 4-7 6-11 5l-1-7" />
+        <path d="M18 41h12" />
+      </symbol>
+      <symbol id="icon-solar" viewBox="0 0 48 48">
+        <path d="M11 17h26l5 17H6l5-17Z" />
+        <path d="M16 17l-2 17" />
+        <path d="M24 17v17" />
+        <path d="M32 17l2 17" />
+        <path d="M9 26h31" />
+        <path d="M20 39h8" />
+        <path d="M24 34v5" />
+      </symbol>
+      <symbol id="illus-dam" viewBox="0 0 96 96">
+        <path class="mini-bg" d="M9 57c5-24 23-39 47-37 20 2 32 15 34 33 2 16-8 29-25 34H26C13 82 6 70 9 57Z" />
+        <path class="mini-hill-back" d="M13 64c14-20 31-30 51-25 13 3 23 13 33 25H13Z" />
+        <path class="mini-water" d="M13 72h75v14H14c-9-4-9-9-1-14Z" />
+        <path class="mini-dam-side" d="M58 42h15l12 34H65Z" />
+        <path class="mini-dam" d="M34 42h28l8 34H25l9-34Z" />
+        <rect class="mini-dam-cap" x="31" y="38" width="45" height="7" rx="2" />
+        <rect class="mini-gate" x="42" y="48" width="6" height="19" rx="1" />
+        <rect class="mini-gate" x="54" y="48" width="6" height="19" rx="1" />
+        <path class="mini-foam" d="M25 72c9-8 19-7 27 0 8-6 18-5 25 0 3 4 0 8-8 8H28c-8 0-10-4-3-8Z" />
+      </symbol>
+      <symbol id="illus-wind" viewBox="0 0 96 96">
+        <path class="mini-bg" d="M9 57c5-24 23-39 47-37 20 2 32 15 34 33 2 16-8 29-25 34H26C13 82 6 70 9 57Z" />
+        <path class="mini-hill-back" d="M11 66c17-22 39-29 62-18 9 4 16 11 23 18H11Z" />
+        <ellipse class="mini-shadow" cx="49" cy="78" rx="34" ry="7" />
+        <path class="mini-tower-fill" d="M47 45h7l5 36H42l5-36Z" />
+        <circle class="mini-hub-fill" cx="50" cy="42" r="6" />
+        <path class="mini-blade-fill" d="M50 35c5-16 14-25 28-29 2 13-6 24-24 33Z" />
+        <path class="mini-blade-fill" d="M44 45c-17 2-31-2-41-13 13-9 27-7 42 5Z" />
+        <path class="mini-blade-fill" d="M55 45c12 11 17 25 13 39-13-5-21-18-19-35Z" />
+      </symbol>
+      <symbol id="illus-solar" viewBox="0 0 96 96">
+        <path class="mini-bg" d="M9 57c5-24 23-39 47-37 20 2 32 15 34 33 2 16-8 29-25 34H26C13 82 6 70 9 57Z" />
+        <circle class="mini-sun" cx="24" cy="27" r="10" />
+        <path class="mini-hill-back" d="M10 66c17-22 37-28 61-18 9 4 17 11 25 18H10Z" />
+        <path class="mini-shadow" d="M21 79h58l-10 7H13Z" />
+        <path class="mini-panel" d="M26 43h42l12 33H16l10-33Z" />
+        <path class="mini-panel-line" d="M36 43 31 76" />
+        <path class="mini-panel-line" d="M48 43v33" />
+        <path class="mini-panel-line" d="M60 43l7 33" />
+        <path class="mini-panel-line" d="M21 56h53" />
+        <path class="mini-panel-line" d="M18 67h59" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24">
+        <path d="M7 17 17 7" />
+        <path d="M9 7h8v8" />
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M20 15.3A8.5 8.5 0 0 1 8.7 4 7 7 0 1 0 20 15.3Z" />
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2" />
+        <path d="M12 20v2" />
+        <path d="M4.93 4.93 6.34 6.34" />
+        <path d="M17.66 17.66 19.07 19.07" />
+        <path d="M2 12h2" />
+        <path d="M20 12h2" />
+        <path d="M4.93 19.07 6.34 17.66" />
+        <path d="M17.66 6.34 19.07 4.93" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <path d="M4 6h16v12H4z" />
+        <path d="m4 7 8 6 8-6" />
+      </symbol>
+    </svg>
+
+    <header class="site-header" data-reveal>
+      <nav class="nav" aria-label="主导航">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span class="brand-mark">H</span>
+          <span>Hydro Energy Lab</span>
+        </a>
+        <div class="nav-links">
+          <a href="#profile">简介</a>
+          <a href="#research">研究</a>
+          <a href="#papers">论文</a>
+          <a href="#projects">项目</a>
+          <a href="#honors">荣誉</a>
+          <a href="#contact">联系</a>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="切换深色模式" data-theme-toggle>
+          <svg class="theme-icon theme-icon-moon" aria-hidden="true">
+            <use href="#icon-moon"></use>
+          </svg>
+          <svg class="theme-icon theme-icon-sun" aria-hidden="true">
+            <use href="#icon-sun"></use>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">PhD Candidate / Hydropower & Renewable Energy</p>
+          <h1 id="hero-title">乔梁</h1>
+          <p class="hero-lead">
+            面向流域水能调度、新能源并网、电力市场与低碳电力系统韧性，开展多尺度建模、优化决策与数据驱动分析。
+          </p>
+          <div class="hero-meta" aria-label="研究关键词">
+            <span>Hydraulic Engineering</span>
+            <span>Renewable Integration</span>
+            <span>Energy System Optimization</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true" data-reveal>
+          <picture>
+            <source media="(max-width: 720px)" srcset="assets/hero-energy-system-mobile-cutout.png" />
+            <img
+              class="hero-image"
+              src="assets/hero-energy-system-cutout.png"
+              alt=""
+              decoding="async"
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="content-section section-shell asymmetric" id="profile" aria-labelledby="profile-title">
+        <div class="section-index" data-reveal>01</div>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Profile</p>
+          <h2 id="profile-title">个人简介</h2>
+        </div>
+        <div class="section-body profile-grid" data-reveal>
+          <p class="large-copy">
+            目前专注于水利水电工程与新能源系统交叉研究，关注水风光互补运行、流域水库群优化调度、
+            可再生能源不确定性建模，以及气候变化与电力市场化改革背景下的能源系统适应性。
+          </p>
+          <div class="profile-facts" aria-label="学术信息">
+            <div>
+              <span>单位</span>
+              <strong>河海大学 水利水电学院</strong>
+            </div>
+            <div>
+              <span>身份</span>
+              <strong>博士研究生</strong>
+            </div>
+            <div>
+              <span>方向</span>
+              <strong>水能系统 / 电力市场</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section section-shell asymmetric reverse" id="research" aria-labelledby="research-title">
+        <div class="section-index" data-reveal>02</div>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Research</p>
+          <h2 id="research-title">研究方向</h2>
+        </div>
+        <div class="section-body research-list" data-reveal>
+          <article class="research-item">
+            <svg class="research-illustration" viewBox="0 0 96 96" aria-hidden="true"><use href="#illus-dam"></use></svg>
+            <div>
+              <h3>流域水库群优化调度</h3>
+              <p>构建面向发电、防洪、生态与供水目标的多目标调度模型，探索高维约束下的稳健决策方法。</p>
+            </div>
+          </article>
+          <article class="research-item">
+            <svg class="research-illustration" viewBox="0 0 96 96" aria-hidden="true"><use href="#illus-wind"></use></svg>
+            <div>
+              <h3>水风光互补与新能源消纳</h3>
+              <p>研究水电灵活性对风光波动的支撑机制，量化多能源协同运行中的经济性与可靠性。</p>
+            </div>
+          </article>
+          <article class="research-item">
+            <svg class="research-illustration" viewBox="0 0 96 96" aria-hidden="true"><use href="#illus-solar"></use></svg>
+            <div>
+              <h3>数据驱动能源系统建模</h3>
+              <p>融合遥感、水文、气象与电力运行数据，发展可解释的预测、评估与优化框架。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell asymmetric" id="papers" aria-labelledby="papers-title">
+        <div class="section-index" data-reveal>03</div>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Publications</p>
+          <h2 id="papers-title">代表论文</h2>
+        </div>
+        <div class="section-body paper-list" data-reveal>
+          <article class="paper-card">
+            <div class="paper-year">2026</div>
+            <h3>Robust operation of hydropower systems for high-penetration renewable grids</h3>
+            <p>Journal of Hydrology · Under Review</p>
+            <a href="#contact" aria-label="联系作者获取论文">
+              <span>Request PDF</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+          </article>
+          <article class="paper-card">
+            <div class="paper-year">2025</div>
+            <h3>Multi-objective reservoir scheduling under coupled hydro-solar uncertainty</h3>
+            <p>Renewable Energy · Accepted</p>
+            <a href="#contact" aria-label="联系作者获取论文">
+              <span>Request PDF</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+          </article>
+          <article class="paper-card">
+            <div class="paper-year">2024</div>
+            <h3>Interpretable inflow forecasting for cascade hydropower decision support</h3>
+            <p>Water Resources Research · Published</p>
+            <a href="#contact" aria-label="联系作者获取论文">
+              <span>Request PDF</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell asymmetric reverse" id="projects" aria-labelledby="projects-title">
+        <div class="section-index" data-reveal>04</div>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">科研项目</h2>
+        </div>
+        <div class="section-body timeline" data-reveal>
+          <article class="timeline-item">
+            <time>2026</time>
+            <div>
+              <h3>流域梯级水电灵活调节能力评估</h3>
+              <p>构建日内至多年尺度的调节能力指标体系，支撑高比例新能源电力系统规划。</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2025</time>
+            <div>
+              <h3>水风光储多能互补联合调度模型</h3>
+              <p>面向不确定来水和新能源出力，开展随机优化、鲁棒优化与场景削减方法比较。</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2024</time>
+            <div>
+              <h3>气候变化下水能资源韧性分析</h3>
+              <p>结合水文模拟与电力系统运行约束，评估极端气候事件对水电供能可靠性的影响。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell asymmetric" id="honors" aria-labelledby="honors-title">
+        <div class="section-index" data-reveal>05</div>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Honors</p>
+          <h2 id="honors-title">获奖荣誉</h2>
+        </div>
+        <div class="section-body honors" data-reveal>
+          <article>
+            <span>2026</span>
+            <strong>博士研究生国家奖学金</strong>
+          </article>
+          <article>
+            <span>2025</span>
+            <strong>国际水电与新能源青年学者论坛优秀报告</strong>
+          </article>
+          <article>
+            <span>2024</span>
+            <strong>研究生学术创新一等奖</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner" data-reveal>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">欢迎交流水能系统与新能源协同研究。</h2>
+          <div class="contact-links">
+            <a href="mailto:name@example.edu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-mail"></use></svg>
+              name@example.edu
+            </a>
+            <a href="#" aria-label="Google Scholar">
+              Google Scholar
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+            <a href="#" aria-label="ORCID">
+              ORCID
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
