@@ -12,6 +12,7 @@
   </head>
   <body>
     <a class="skip-link" href="#profile">跳转到内容</a>
+    <div class="scroll-progress" aria-hidden="true"></div>
 
     <svg class="svg-defs" aria-hidden="true">
       <symbol id="icon-dam" viewBox="0 0 48 48">
@@ -93,6 +94,20 @@
         <path d="M4 6h16v12H4z" />
         <path d="m4 7 8 6 8-6" />
       </symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24">
+        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5Z" />
+        <path d="M4 5.5v16" />
+        <path d="M8 7h8" />
+        <path d="M8 11h6" />
+      </symbol>
+      <symbol id="icon-camera" viewBox="0 0 24 24">
+        <path d="M4 8h4l2-3h4l2 3h4v11H4Z" />
+        <circle cx="12" cy="13.5" r="3.5" />
+      </symbol>
+      <symbol id="icon-compass" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8Z" />
+      </symbol>
     </svg>
 
     <header class="site-header" data-reveal>
@@ -107,6 +122,7 @@
           <a href="#papers">论文</a>
           <a href="#projects">项目</a>
           <a href="#honors">荣誉</a>
+          <a href="#beyond">研究之外</a>
           <a href="#contact">联系</a>
         </div>
         <button class="theme-toggle" type="button" aria-label="切换深色模式" data-theme-toggle>
@@ -146,6 +162,11 @@
               fetchpriority="high"
             />
           </picture>
+          <div class="hero-signal" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </section>
 
@@ -256,7 +277,7 @@
             <time>2026</time>
             <div>
               <h3>梯级水电灵活性改造分析</h3>
-              <p>结合泵站改造、可逆式机组改造、新建上库等水电改造模式，评估流域梯级水电群灵活性的灵活性潜力。</p>
+              <p>结合泵站改造、可逆式机组改造、新建上库等水电改造模式，评估流域梯级水电群的灵活调节潜力。</p>
             </div>
           </article>
           <article class="timeline-item">
@@ -291,6 +312,79 @@
             <span>2023</span>
             <strong>硕士研究生一等学业奖学金</strong>
           </article>
+        </div>
+      </section>
+
+      <section class="life-section section-shell" id="beyond" aria-labelledby="beyond-title">
+        <div class="life-intro" data-reveal>
+          <p class="eyebrow">Beyond Research</p>
+          <h2 id="beyond-title">研究之外</h2>
+          <p>
+            研究之外，也把注意力留给阅读、影像、行走与日常节奏；这些片段延伸出对能源转型、城市系统和真实世界的观察。
+          </p>
+        </div>
+        <div class="life-grid" data-reveal>
+          <a
+            class="life-card life-card-book"
+            href="assets/wechat-qr-gh_600f2f6be9e4.png"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="打开微信公众号二维码"
+            data-tilt
+          >
+            <div class="life-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-book"></use></svg>
+            </div>
+            <span>Reading</span>
+            <h3>阅读与写作</h3>
+            <p>能源转型、公共政策、技术史与长篇非虚构，作为研究之外的长期输入。</p>
+            <div class="social-row">
+              <strong class="social-handle">扫码关注公众号</strong>
+              <img
+                class="wechat-qr-thumb"
+                src="assets/wechat-qr-gh_600f2f6be9e4.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </a>
+          <a
+            class="life-card life-card-camera"
+            href="https://www.douyin.com/user/self?from_tab_name=main&amp;showSubTab=video&amp;showTab=post"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="打开抖音账号 VesnaNova"
+            data-tilt
+          >
+            <div class="life-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-camera"></use></svg>
+            </div>
+            <span>Images</span>
+            <h3>影像与行走</h3>
+            <p>记录河流、城市基础设施与旅途片段，保留观察现实系统的另一种视角。</p>
+            <div class="social-row">
+              <strong class="social-handle">抖音 VesnaNova</strong>
+            </div>
+          </a>
+          <a
+            class="life-card life-card-compass"
+            href="https://www.xiaohongshu.com/user/profile/5f30a7f7000000000101cf90"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="打开小红书账号 853895793"
+            data-tilt
+          >
+            <div class="life-card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-compass"></use></svg>
+            </div>
+            <span>Rhythm</span>
+            <h3>日常节奏</h3>
+            <p>运动、音乐与周末充电，让高强度建模和写作保持更稳定的节奏。</p>
+            <div class="social-row">
+              <strong class="social-handle">小红书 853895793</strong>
+            </div>
+          </a>
         </div>
       </section>
 
