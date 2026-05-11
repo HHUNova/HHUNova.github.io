@@ -1,10 +1,12 @@
 const root = document.documentElement;
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const header = document.querySelector(".site-header");
+const scrollProgress = document.querySelector(".scroll-progress");
 const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
+const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 
 const storage = {
   get(key) {
@@ -39,8 +41,22 @@ const setHeaderState = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 8);
 };
 
-setHeaderState();
-window.addEventListener("scroll", setHeaderState, { passive: true });
+const setScrollProgress = () => {
+  if (!scrollProgress) return;
+
+  const maxScroll = root.scrollHeight - window.innerHeight;
+  const progress = maxScroll > 0 ? Math.min(window.scrollY / maxScroll, 1) : 0;
+  root.style.setProperty("--scroll-progress", progress.toFixed(4));
+};
+
+const updateScrollEffects = () => {
+  setHeaderState();
+  setScrollProgress();
+};
+
+updateScrollEffects();
+window.addEventListener("scroll", updateScrollEffects, { passive: true });
+window.addEventListener("resize", setScrollProgress);
 
 const revealItems = document.querySelectorAll("[data-reveal]");
 const revealFallback = window.setTimeout(() => {
@@ -85,4 +101,30 @@ if ("IntersectionObserver" in window) {
   );
 
   sections.forEach((section) => navObserver.observe(section));
+}
+
+const tiltCards = Array.from(document.querySelectorAll("[data-tilt]"));
+const canUsePointerMotion =
+  !motionQuery.matches && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+if (canUsePointerMotion) {
+  tiltCards.forEach((card) => {
+    card.addEventListener("pointermove", (event) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+      const rotateX = (50 - y) / 24;
+      const rotateY = (x - 50) / 24;
+
+      card.style.setProperty("--mx", `${x.toFixed(2)}%`);
+      card.style.setProperty("--my", `${y.toFixed(2)}%`);
+      card.style.transform = `translateY(-4px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg)`;
+    });
+
+    card.addEventListener("pointerleave", () => {
+      card.style.removeProperty("--mx");
+      card.style.removeProperty("--my");
+      card.style.transform = "";
+    });
+  });
 }
