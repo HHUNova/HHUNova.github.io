@@ -912,7 +912,7 @@ h1 {
 .profile-facts {
   display: grid;
   border-top: 1px solid var(--line);
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: minmax(190px, 1.1fr) minmax(110px, 0.6fr) minmax(260px, 1.55fr);
 }
 
 .profile-facts div {
@@ -936,6 +936,10 @@ h1 {
   display: block;
   font-size: 15px;
   line-height: 1.6;
+}
+
+.profile-facts div:last-child strong {
+  white-space: nowrap;
 }
 
 .research-list {
@@ -1716,6 +1720,10 @@ html.js [data-reveal].is-visible {
 
   .profile-facts {
     grid-template-columns: 1fr;
+  }
+
+  .profile-facts div:last-child strong {
+    white-space: normal;
   }
 
   .research-item {
